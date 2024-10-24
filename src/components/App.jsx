@@ -10,6 +10,23 @@ import "./styles/App.css";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleRegistration = ({
+    username,
+    email,
+    password,
+    confirmPassword,
+  }) => {
+    if (password === confirmPassword) {
+      auth
+        .register(username, password, email)
+        .then(() => {
+          //handle succesful registration
+        })
+        .catch(console.error);
+    }
+  };
+
   return (
     <Routes>
       <Route

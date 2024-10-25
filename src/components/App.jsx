@@ -38,7 +38,11 @@ function App() {
     auth
       .authorize(username, password)
       .then((data) => {
-        console.log(data);
+        if (data.jwt) {
+          setUserData(data.user);
+          setIsLoggedIn(true);
+          navigate("/ducks");
+        }
       })
       .catch(console.error);
   };
@@ -57,7 +61,7 @@ function App() {
         path="/my-profile"
         element={
           <ProtectedRoute isLoggedIn={isLoggedIn}>
-            <MyProfile />
+            <MyProfile userData={userData} />
           </ProtectedRoute>
         }
       />

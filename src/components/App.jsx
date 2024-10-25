@@ -30,6 +30,18 @@ function App() {
     }
   };
 
+  const handleLogin = ({ username, password }) => {
+    if (!username || !password) {
+      return;
+    }
+    auth
+      .register(username, password)
+      .then((data) => {
+        console.log(data);
+      })
+      .catch(console.error);
+  };
+
   return (
     <Routes>
       <Route
@@ -52,7 +64,7 @@ function App() {
         path="/login"
         element={
           <div className="loginContainer">
-            <Login />
+            <Login handleLogin={handleLogin} />
           </div>
         }
       />

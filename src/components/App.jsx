@@ -10,6 +10,7 @@ import * as auth from "../utils/auth";
 import "./styles/App.css";
 
 function App() {
+  const [userData, setUserData] = useState({ username: "", email: "" });
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ function App() {
       return;
     }
     auth
-      .register(username, password)
+      .authorize(username, password)
       .then((data) => {
         console.log(data);
       })

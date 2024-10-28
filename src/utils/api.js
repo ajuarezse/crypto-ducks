@@ -1,5 +1,3 @@
-import { getToken } from "./token";
-
 export const BASE_URL = "https://api.nomoreparties.co";
 
 export const getUserInfo = (token) => {

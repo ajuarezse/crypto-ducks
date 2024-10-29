@@ -8,25 +8,25 @@ A React app built with Vite. Used by the TripleTen Software Engineering Bootcamp
 
 ## Key Features Include:
 
-- 📝 **User Registration** Users can register for a new account securely with validated information.
+- 📝 **User Registration**: Users can register for a new account securely with validated information.
 
-- 🔐 **User Login** Registered users can log in to access sensitive information on crypto ducks.
+- 🔐 **User Login**: Registered users can log in to access sensitive information on crypto ducks.
 
-- 🚪 **User Logout** Secure logout functionality ensures users can safely exit the application.
+- 🚪 **User Logout**: Secure logout functionality ensures users can safely exit the application.
 
-- 👮‍♂️ **Authentication & Authorization** Protected routes for /ducks and /my-profile components ensure only authenticated users have access.
+- 👮‍♂️ **Authentication & Authorization**: Protected routes for /ducks and /my-profile components ensure only authenticated users have access.
 
 ## Technologies Used
 
-- ⚛️ **React** Built with React for a seamless user interface and component-based architecture.
+- ⚛️ **React**: Built with React for a seamless user interface and component-based architecture.
 
-- 📝 **JavaScript** Core logic and functionality implemented with JavaScript.
+- 📝 **JavaScript**: Core logic and functionality implemented with JavaScript.
 
-- ⚡ **Vite** Powered by Vite for fast development and optimized build performance.
+- ⚡ **Vite**: Powered by Vite for fast development and optimized build performance.
 
-- 🔑 **Token-Based Authentication** Secure tokens are used to validate user sessions and safeguard user data.
+- 🔑 **Token-Based Authentication**: Secure tokens are used to validate user sessions and safeguard user data.
 
-- 🛣️ **React Router** Efficient routing setup allows for smooth navigation and protected routes.
+- 🛣️ **React Router**: Efficient routing setup allows for smooth navigation and protected routes.
 
 ## Usage
 
